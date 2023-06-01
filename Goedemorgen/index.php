@@ -9,25 +9,25 @@
 date_default_timezone_set('europe/amsterdam');
 $today = date("H:i");
 
-$t = date("H");
+$tijd = date("H");
 
 echo '<div id="output">';
-if ($t < "12") {
+if ($tijd < "12") {
     echo "Goede morgen!";
     $images = "morning.png";
 } 
 
-elseif ($t < "18") {
+elseif ($tijd < "18") {
     echo "Goede middag!";
     $images = "afternoon.png";
 }
 
-elseif ($t < "24") {
+elseif ($tijd < "24") {
     echo "Goede avond!";
     $images = "evening.png";
 }
 
-elseif ($t < "6") {
+elseif ($tijd < "6") {
     echo "Goede nacht!";
     $images = "night.png";
 }
@@ -39,11 +39,11 @@ echo "Het is nu $today";
 </head>
 <body>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+   
 
     body {
         background-image: url('images/<?php echo $images; ?>');
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; 
         background-size: cover;
     }
 
