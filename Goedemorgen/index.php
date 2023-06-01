@@ -13,22 +13,22 @@ $tijd = date("H");
 
 echo '<div id="output">';
 if ($tijd < "12") {
-    echo "Goede morgen!";
+    echo "Goeie morgen!";
     $images = "morning.png";
 } 
 
 elseif ($tijd < "18") {
-    echo "Goede middag!";
+    echo "Goeie middag!";
     $images = "afternoon.png";
 }
 
 elseif ($tijd < "24") {
-    echo "Goede avond!";
+    echo "Goeie avond!";
     $images = "evening.png";
 }
 
 elseif ($tijd < "6") {
-    echo "Goede nacht!";
+    echo "Goeie nacht!";
     $images = "night.png";
 }
 '</div>';
@@ -39,8 +39,6 @@ echo "Het is nu $today";
 </head>
 <body>
 <style>
-   
-
     body {
         background-image: url('images/<?php echo $images; ?>');
         background-repeat: no-repeat; 
