@@ -1,8 +1,12 @@
 <html>
 <body>
 
-Welcome <?php echo $_GET["name"]; ?><br>
-Your email address is: <?php echo $_GET["email"]; ?>
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  <label for="name">Name:</label>
+  <input type="text" name="name" required><br>
 
-</body>
-</html> 
+  <label for="email">Email:</label>
+  <input type="email" name="email" required><br>
+
+  <input type="submit" value="submit">
+</form>
